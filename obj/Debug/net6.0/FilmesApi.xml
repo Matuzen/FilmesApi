@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FilmesApi</name>
+    </assembly>
+    <members>
+        <member name="M:FilmesApi.Controllers.FilmeController.RecuperaFilmes(System.Int32,System.Int32)">
+            <summary>
+            Consulta de filmes utilizando o skip e take
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.RecuperarFilmeLinq">
+            <summary>
+            Pesquisa utilizando o Linq
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.TodosOsFilmes">
+            <summary>
+            Pesquisa utilizando o list
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.TodosOsFilme">
+            <summary>
+            Pesquisa utilizando o List sem o foreach
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.AdicionarFilme(FilmesApi.Data.DTOs.CreateFilmeDto)">
+            <summary>
+            Adiciona um filme ao banco de dados
+            </summary>
+            <param name="filmeDto"> Objeto com os campos necessários para a criação de um filme </param>
+            <returns> IActionResult </returns>
+            <respose code="201"> Caso inserção seja feita com sucesso </respose>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.AdicionarFilmes(System.Collections.Generic.List{FilmesApi.Data.DTOs.CreateFilmeDto})">
+            <summary>
+            Adiciona vários filmes ao banco de dados
+            </summary>
+            <param name="filmesDto"> Objeto com os campos necessários para a criação de um filme </param>
+            <returns> IActionResult </returns>
+            <respose code="201"> Caso inserção seja feita com sucesso </respose>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.AdicionarFilmePeloLinq(FilmesApi.Models.Filme)">
+            <summary>
+            Adiciona filme ao banco de dados pelo Linq
+            </summary>
+            <param name="filme"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
